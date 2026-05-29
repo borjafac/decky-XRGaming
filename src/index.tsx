@@ -100,10 +100,10 @@ type HeadsetModeOption = "virtual_display" | "vr_lite" | "sideview" | "disabled"
 type CalibrationSetup = "AUTOMATIC" | "INTERACTIVE";
 type CalibrationState = "NOT_CALIBRATED" | "CALIBRATING" | "CALIBRATED" | "WAITING_ON_USER";
 type SbsModeControl = "unset" | "enable" | "disable";
-type SideviewPosition = "middle_center" | "top_left" | "top_right" | "bottom_left" | "bottom_right" | "middle_left" | "center_top" | "middle_right" | "center_bottom";
+type SideviewPosition = "middle_center" | "top_left" | "top_right" | "bottom_left" | "bottom_right" | "middle_left" | "top_center" | "middle_right" | "bottom_center";
 type MeasurementUnits = "cm" | "in";
 const ManagedExternalModes: ExternalMode[] = ['virtual_display', 'sideview', 'none'];
-const SideviewPositions: SideviewPosition[] = ["middle_center", "top_left", "top_right", "bottom_left", "bottom_right, "middle_left", "center_top", "middle_right", "center_bottom"];
+const SideviewPositions: SideviewPosition[] = ["middle_center", "top_left", "top_right", "bottom_left", "bottom_right, "middle_left", "top_center", "middle_right", "bottom_center"];
 const DirtyControlFlagsExpireMilliseconds = 3000;
 
 const HeadsetModeDescriptions: {[key in HeadsetModeOption]: string} = {
@@ -121,9 +121,9 @@ const SideviewPositionDescriptions: {[key in SideviewPosition]: string} = {
     "bottom_left": "Bottom\u00a0left",
     "bottom_right": "Bottom\u00a0right"
     "middle_left": "Middle\u00a0left",
-    "center_top": "Center\u00a0top",
+    "top_center": "Top\u00a0center",
     "middle_right": "Middle\u00a0right",
-    "center_bottom": "Center\u00a0bottom",
+    "bottom_center": "Bottom\u00a0center",
 };
 
 const HeadsetModeConfirmationTimeoutMs = 1000
